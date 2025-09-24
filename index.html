@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Page perso - Nicolas</title>
+  <style>
+    /* --- Reset léger --- */
+    body, h1, h2, p {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #222;
+      color: #fff;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+    }
+
+    header p {
+      margin-top: 0.5rem;
+      font-size: 1.2rem;
+      color: #bbb;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1000px;
+      margin: 2rem auto;
+    }
+
+    /* Section photo + texte */
+    .intro {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      background: #fff;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    }
+
+    .intro img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      background: #ddd;
+    }
+
+    /* Section compétences */
+    .skills {
+      margin-top: 2rem;
+      padding: 2rem;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    }
+
+    .skills h2 {
+      margin-bottom: 1.5rem;
+      font-size: 1.8rem;
+      text-align: center;
+    }
+
+    .skills-logos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    .skills-logos img {
+      width: 80px;
+      height: 80px;
+      object-fit: contain;
+      transition: transform 0.2s ease;
+    }
+
+    .skills-logos img:hover {
+      transform: scale(1.1);
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+      color: #777;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Nicolas</h1>
+    <p>Développeur en formation – Python, Django & Docker</p>
+  </header>
+
+  <div class="container">
+    <!-- Photo + présentation -->
+    <section class="intro">
+      <img src="photo.jpg" alt="Photo de profil (à remplacer)">
+      <div>
+        <h2>Bienvenue 👋</h2>
+        <p>Je suis en formation de développement web.  
+           J'apprends les bases solides du back-end avec Python, le framework Django, et les outils modernes comme Docker.</p>
+      </div>
+    </section>
+
+    <!-- Compétences -->
+    <section class="skills">
+      <h2>Technologies étudiées</h2>
+      <div class="skills-logos">
+        <img src="https://www.python.org/static/community_logos/python-logo.png" alt="Python">
+        <img src="https://static.djangoproject.com/img/logos/django-logo-negative.svg" alt="Django">
+        <img src="https://avatars.githubusercontent.com/u/5429470?s=200&v=4" alt="Django REST framework">
+        <img src="https://www.docker.com/wp-content/uploads/2022/03/Moby-logo.png" alt="Docker">
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    © 2025 Nicolas – Site perso avec GitHub Pages
+  </footer>
+
+</body>
+</html>
